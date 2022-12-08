@@ -26,12 +26,12 @@ const addContent = (data) => {
             let img = item.show.image.medium;
             let newImg = document.createElement('img');
             let url = item.show.url;
-            let ImgAnchortag = document.createElement('a');
+            let imgAnchortag = document.createElement('a');
             newImg.src = img;
-            ImgAnchortag.setAttribute('href', url);
-            ImgAnchortag.append(newImg)
-            ImgAnchortag.setAttribute('target', '_blank')
-            container.append(ImgAnchortag);
+            imgAnchortag.setAttribute('href', url);
+            imgAnchortag.append(newImg)
+            imgAnchortag.setAttribute('target', '_blank')
+            container.append(imgAnchortag);
         }
         catch (e) {console.log('No Image avaliable for:', item.show.name)}
     }
